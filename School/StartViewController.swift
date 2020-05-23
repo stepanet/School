@@ -17,13 +17,16 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sceneView.layer.cornerRadius = 10
+        sceneView.clipsToBounds = true
+        sceneView.backgroundColor = .clear
         
-        if let view = sceneView {
+        if let view = sceneView  {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "StartScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                scene.size = self.view.bounds.size
+                scene.size = self.sceneView.bounds.size
                 // Present the scene
                 view.presentScene(scene)
             }

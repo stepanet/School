@@ -17,9 +17,8 @@
 		3B3860552479B53A008C777F /* StartAction.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860542479B53A008C777F /* StartAction.sks */; };
 		3B3860572479B5FA008C777F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860562479B5FA008C777F /* StartScene.swift */; };
 		3B3860602479C3DA008C777F /* school.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B38605F2479C3DA008C777F /* school.mp3 */; };
-		3B3860632479C801008C777F /* StartScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860622479C800008C777F /* StartScene.scn */; };
-		3B3860652479C81F008C777F /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860642479C81F008C777F /* StartScene.sks */; };
 		552727637C1B5FC096606772 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291CE22DCFE307F4AC08BBE /* Pods_School.framework */; };
+		E0C78E7D2479D5C80009A08A /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0C78E7C2479D5C80009A08A /* StartScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +36,8 @@
 		3B3860542479B53A008C777F /* StartAction.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartAction.sks; sourceTree = "<group>"; };
 		3B3860562479B5FA008C777F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		3B38605F2479C3DA008C777F /* school.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = school.mp3; sourceTree = "<group>"; };
-		3B3860622479C800008C777F /* StartScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StartScene.scn; sourceTree = "<group>"; };
-		3B3860642479C81F008C777F /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		848732CE6D3C60780982C946 /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
+		E0C78E7C2479D5C80009A08A /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +97,10 @@
 		3B3860582479B63A008C777F /* StartScene */ = {
 			isa = PBXGroup;
 			children = (
-				3B38605F2479C3DA008C777F /* school.mp3 */,
 				3B3860542479B53A008C777F /* StartAction.sks */,
-				3B3860622479C800008C777F /* StartScene.scn */,
-				3B3860642479C81F008C777F /* StartScene.sks */,
 				3B3860562479B5FA008C777F /* StartScene.swift */,
+				E0C78E7C2479D5C80009A08A /* StartScene.sks */,
+				3B38605F2479C3DA008C777F /* school.mp3 */,
 			);
 			path = StartScene;
 			sourceTree = "<group>";
@@ -177,14 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C78E7D2479D5C80009A08A /* StartScene.sks in Resources */,
 				3B0DFC192475CFEF00A51962 /* LaunchScreen.storyboard in Resources */,
-				3B3860652479C81F008C777F /* StartScene.sks in Resources */,
 				3B0DFC212475D0E000A51962 /* GoogleService-Info.plist in Resources */,
 				3B3860552479B53A008C777F /* StartAction.sks in Resources */,
 				3B0DFC162475CFEF00A51962 /* Assets.xcassets in Resources */,
 				3B3860602479C3DA008C777F /* school.mp3 in Resources */,
 				3B0DFC142475CFE800A51962 /* Main.storyboard in Resources */,
-				3B3860632479C801008C777F /* StartScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5BCB9XF3G;
 				INFOPLIST_FILE = School/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5BCB9XF3G;
 				INFOPLIST_FILE = School/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
