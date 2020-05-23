@@ -14,10 +14,11 @@
 		3B0DFC192475CFEF00A51962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0DFC172475CFEF00A51962 /* LaunchScreen.storyboard */; };
 		3B0DFC212475D0E000A51962 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B0DFC202475D0E000A51962 /* GoogleService-Info.plist */; };
 		3B3860512479A2F6008C777F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860502479A2F6008C777F /* StartViewController.swift */; };
-		3B3860532479A8F5008C777F /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860522479A8F5008C777F /* StartScene.sks */; };
 		3B3860552479B53A008C777F /* StartAction.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860542479B53A008C777F /* StartAction.sks */; };
 		3B3860572479B5FA008C777F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860562479B5FA008C777F /* StartScene.swift */; };
 		3B3860602479C3DA008C777F /* school.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B38605F2479C3DA008C777F /* school.mp3 */; };
+		3B3860632479C801008C777F /* StartScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860622479C800008C777F /* StartScene.scn */; };
+		3B3860652479C81F008C777F /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3B3860642479C81F008C777F /* StartScene.sks */; };
 		552727637C1B5FC096606772 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291CE22DCFE307F4AC08BBE /* Pods_School.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +34,11 @@
 		3B0DFC1A2475CFEF00A51962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B0DFC202475D0E000A51962 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B3860502479A2F6008C777F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		3B3860522479A8F5008C777F /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		3B3860542479B53A008C777F /* StartAction.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartAction.sks; sourceTree = "<group>"; };
 		3B3860562479B5FA008C777F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		3B38605F2479C3DA008C777F /* school.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = school.mp3; sourceTree = "<group>"; };
+		3B3860622479C800008C777F /* StartScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StartScene.scn; sourceTree = "<group>"; };
+		3B3860642479C81F008C777F /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		848732CE6D3C60780982C946 /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +101,8 @@
 			children = (
 				3B38605F2479C3DA008C777F /* school.mp3 */,
 				3B3860542479B53A008C777F /* StartAction.sks */,
-				3B3860522479A8F5008C777F /* StartScene.sks */,
+				3B3860622479C800008C777F /* StartScene.scn */,
+				3B3860642479C81F008C777F /* StartScene.sks */,
 				3B3860562479B5FA008C777F /* StartScene.swift */,
 			);
 			path = StartScene;
@@ -175,12 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0DFC192475CFEF00A51962 /* LaunchScreen.storyboard in Resources */,
+				3B3860652479C81F008C777F /* StartScene.sks in Resources */,
 				3B0DFC212475D0E000A51962 /* GoogleService-Info.plist in Resources */,
 				3B3860552479B53A008C777F /* StartAction.sks in Resources */,
 				3B0DFC162475CFEF00A51962 /* Assets.xcassets in Resources */,
 				3B3860602479C3DA008C777F /* school.mp3 in Resources */,
-				3B3860532479A8F5008C777F /* StartScene.sks in Resources */,
 				3B0DFC142475CFE800A51962 /* Main.storyboard in Resources */,
+				3B3860632479C801008C777F /* StartScene.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
