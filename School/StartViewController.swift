@@ -13,13 +13,23 @@ import GameplayKit
 class StartViewController: UIViewController {
 
     @IBOutlet weak var sceneView: SKView!
+    @IBOutlet weak var goBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        startMainScene()
+
+    }
+    
+    
+    func startMainScene() {
+        
         sceneView.layer.cornerRadius = 10
         sceneView.clipsToBounds = true
-        sceneView.backgroundColor = .clear
+        sceneView.backgroundColor = .white
+        
+        sceneView.scene?.removeAllChildren()
         
         if let view = sceneView  {
             // Load the SKScene from 'GameScene.sks'
@@ -33,10 +43,13 @@ class StartViewController: UIViewController {
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+          //  view.showsFPS = true
+          //  view.showsNodeCount = true
         }
+
+        
     }
+    
     
     override var shouldAutorotate: Bool {
         return true
@@ -49,5 +62,9 @@ class StartViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
+    
+    @IBAction func goBtnAction(_ sender: UIButton) {
+        startMainScene()
+    }
+    
 }
