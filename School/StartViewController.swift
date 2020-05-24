@@ -12,7 +12,7 @@ import GameplayKit
 
 class StartViewController: UIViewController {
 
-    @IBOutlet weak var sceneView: SKView!
+//    @IBOutlet weak var sceneView: SKView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,22 +23,14 @@ class StartViewController: UIViewController {
     
     
     func startMainScene() { //complition: @escaping () -> ()) {
-        
-        sceneView.layer.cornerRadius = 10
-        sceneView.clipsToBounds = true
-        sceneView.backgroundColor = .white
-        
-        sceneView.scene?.removeAllChildren()
-        
-        if let view = sceneView  {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "StartScene") {
-                // Set the scale mode to scale to fit the window
+
+        if let view = self.view as! SKView?  {
+            
+            let scene = StartScene(size: self.view.bounds.size)
+                scene.removeAllChildren()
+                scene.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
                 scene.scaleMode = .aspectFill
-                scene.size = self.sceneView.bounds.size
-                // Present the scene
                 view.presentScene(scene)
-            }
             
             view.ignoresSiblingOrder = true
             

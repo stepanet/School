@@ -145,7 +145,6 @@ class StartScene: SKScene {
         let groupActionTree1 = SKAction.group([zoomLabelTree1,moveActionTree1])
         
         
-        
         sun.run(groupActionSun)
         school.run(groupActionSchool)
         tree.run(groupActionTree)
@@ -154,7 +153,7 @@ class StartScene: SKScene {
         child.run(groupActionChild) {
             self.addChild(goBtn)
             goBtn.run(groupActionBtn) {
-                sound.run(SKAction.stop())
+                //sound.run(SKAction.stop())
             }
         }
     }
