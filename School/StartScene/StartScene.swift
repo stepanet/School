@@ -105,9 +105,12 @@ class StartScene: SKScene {
         
         
         let movePointCloud = CGPoint(x: self.size.width + cloud.size.width, y: self.size.height / 1.5)
-        let moveActionCloud = SKAction.move(to: movePointCloud, duration: 10)
+        let movePointCloudReturn = CGPoint(x: 0 - cloud.size.width, y: self.size.height / 1.5)
+        let moveActionCloud = SKAction.move(to: movePointCloud, duration: 3)
+        let moveActionCloudReturn = SKAction.move(to: movePointCloudReturn, duration: 3)
+        let moveCloud = SKAction.sequence([moveActionCloud,moveActionCloudReturn])
         let zoomCloud = SKAction.scale(to: CGSize(width: cloud.size.width / 2, height: cloud.size.height / 2 ), duration: 5)
-        let groupActionCloud = SKAction.group([moveActionCloud,zoomCloud])
+        let groupActionCloud = SKAction.group([moveCloud,zoomCloud])
         
         
         
@@ -122,8 +125,8 @@ class StartScene: SKScene {
 
         
         let movePointTree = CGPoint(x: self.size.width / 2.5, y: self.size.height / 3)
-        let zoomLabelTree = SKAction.scale(by: 1.5, duration: 2 )
-        let moveActionTree = SKAction.move(to: movePointTree, duration: 2)
+        let zoomLabelTree = SKAction.scale(by: 1.5, duration: 1 )
+        let moveActionTree = SKAction.move(to: movePointTree, duration: 1)
         let groupActionTree = SKAction.group([zoomLabelTree,moveActionTree])
         
         let movePointChild = CGPoint(x: self.size.width / 1.5, y: self.size.height / 3.5)
@@ -143,22 +146,16 @@ class StartScene: SKScene {
         
         
         
-        
-        
         sun.run(groupActionSun)
         school.run(groupActionSchool)
         tree.run(groupActionTree)
         tree1.run(groupActionTree1)
-        cloud.run(groupActionCloud) {
-                        sound.run(SKAction.stop())
-        }
+        cloud.run(groupActionCloud)
         child.run(groupActionChild) {
             self.addChild(goBtn)
-            goBtn.run(groupActionBtn)
-
+            goBtn.run(groupActionBtn) {
+                sound.run(SKAction.stop())
+            }
         }
-        //flower.run(groupActionFlower)
     }
-    
-    
 }
