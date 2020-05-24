@@ -11,43 +11,14 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="AuthVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="StartViewController" customModule="School" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="StartView">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="StartView" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-2U-NsB">
-                                <rect key="frame" x="10" y="697" width="355" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="kn4-2U-NsB" secondAttribute="height" multiplier="5:1" id="v1d-QX-MdB"/>
-                                </constraints>
-                                <state key="normal" image="btn"/>
-                                <connections>
-                                    <action selector="goBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f82-bl-fMk"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-jH-75G" customClass="SKView">
-                                <rect key="frame" x="20" y="44" width="335" height="626"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kn4-2U-NsB" secondAttribute="trailing" constant="10" id="5Xc-uy-CvG"/>
-                            <constraint firstItem="kn4-2U-NsB" firstAttribute="top" secondItem="K0r-jH-75G" secondAttribute="bottom" constant="27" id="6Jr-80-bSy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K0r-jH-75G" secondAttribute="trailing" constant="20" id="9pc-zU-Cbj"/>
-                            <constraint firstItem="K0r-jH-75G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AzW-ik-qzq"/>
-                            <constraint firstItem="kn4-2U-NsB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="C5C-6S-bpO"/>
-                            <constraint firstItem="K0r-jH-75G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CHE-09-iK5"/>
-                            <constraint firstItem="K0r-jH-75G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XZk-X4-VeZ"/>
-                            <constraint firstItem="K0r-jH-75G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ds3-lf-Tr3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K0r-jH-75G" secondAttribute="trailing" constant="20" id="qWA-bi-a1L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kn4-2U-NsB" secondAttribute="bottom" constant="10" id="wZm-Os-qQk"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="goBtn" destination="kn4-2U-NsB" id="stt-hH-bMQ"/>
-                        <outlet property="sceneView" destination="K0r-jH-75G" id="XwR-ON-fUh"/>
+                        <outlet property="sceneView" destination="8bC-Xf-vdC" id="x3h-ge-0GS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,7 +26,4 @@
             <point key="canvasLocation" x="132" y="137.4384236453202"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="btn" width="360" height="79"/>
-    </resources>
 </document>

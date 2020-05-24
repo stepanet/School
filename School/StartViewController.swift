@@ -13,7 +13,6 @@ import GameplayKit
 class StartViewController: UIViewController {
 
     @IBOutlet weak var sceneView: SKView!
-    @IBOutlet weak var goBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,7 @@ class StartViewController: UIViewController {
     }
     
     
-    func startMainScene() {
+    func startMainScene() { //complition: @escaping () -> ()) {
         
         sceneView.layer.cornerRadius = 10
         sceneView.clipsToBounds = true
@@ -47,7 +46,6 @@ class StartViewController: UIViewController {
           //  view.showsNodeCount = true
         }
 
-        
     }
     
     
