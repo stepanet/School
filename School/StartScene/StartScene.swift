@@ -98,8 +98,8 @@ class StartScene: SKScene {
         
         
         let movePointSun = CGPoint(x: self.size.width / 2 , y: self.size.height / 1.4)
-        let moveActionSun = SKAction.move(to: movePointSun, duration: 3)
-        let zoomSun = SKAction.scale(to: CGSize(width: sun.size.width * 2, height: sun.size.height * 2 ), duration: 3)
+        let moveActionSun = SKAction.move(to: movePointSun, duration: 5)
+        let zoomSun = SKAction.scale(to: CGSize(width: sun.size.width * 2, height: sun.size.height * 2 ), duration: 5)
         let groupActionSun = SKAction.group([moveActionSun,zoomSun])
         
         
@@ -107,7 +107,7 @@ class StartScene: SKScene {
         let movePointCloud = CGPoint(x: self.size.width + cloud.size.width, y: self.size.height / 1.5)
         let movePointCloudReturn = CGPoint(x: 0 - cloud.size.width, y: self.size.height / 1.5)
         let moveActionCloud = SKAction.move(to: movePointCloud, duration: 3)
-        let moveActionCloudReturn = SKAction.move(to: movePointCloudReturn, duration: 3)
+        let moveActionCloudReturn = SKAction.move(to: movePointCloudReturn, duration: 5)
         let moveCloud = SKAction.sequence([moveActionCloud,moveActionCloudReturn])
         let zoomCloud = SKAction.scale(to: CGSize(width: cloud.size.width / 2, height: cloud.size.height / 2 ), duration: 5)
         let groupActionCloud = SKAction.group([moveCloud,zoomCloud])
