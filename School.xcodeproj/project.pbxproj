@@ -16,7 +16,7 @@
 		3B3860512479A2F6008C777F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860502479A2F6008C777F /* StartViewController.swift */; };
 		3B3860572479B5FA008C777F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860562479B5FA008C777F /* StartScene.swift */; };
 		552727637C1B5FC096606772 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291CE22DCFE307F4AC08BBE /* Pods_School.framework */; };
-		E056C9BE247B297500A10EA6 /* schoolmp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E056C9BD247B297500A10EA6 /* schoolmp3.mp3 */; };
+		E056C9ED247BBB3100A10EA6 /* schooltrim.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		3B3860502479A2F6008C777F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B3860562479B5FA008C777F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		848732CE6D3C60780982C946 /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
-		E056C9BD247B297500A10EA6 /* schoolmp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schoolmp3.mp3; sourceTree = "<group>"; };
+		E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schooltrim.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				3B3860502479A2F6008C777F /* StartViewController.swift */,
 				3B0DFC122475CFE800A51962 /* Main.storyboard */,
 				3B3860562479B5FA008C777F /* StartScene.swift */,
-				E056C9BD247B297500A10EA6 /* schoolmp3.mp3 */,
+				E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */,
 				3B0DFC152475CFEF00A51962 /* Assets.xcassets */,
 				3B0DFC172475CFEF00A51962 /* LaunchScreen.storyboard */,
 				3B0DFC202475D0E000A51962 /* GoogleService-Info.plist */,
@@ -160,9 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E056C9ED247BBB3100A10EA6 /* schooltrim.mp3 in Resources */,
 				3B0DFC192475CFEF00A51962 /* LaunchScreen.storyboard in Resources */,
 				3B0DFC212475D0E000A51962 /* GoogleService-Info.plist in Resources */,
-				E056C9BE247B297500A10EA6 /* schoolmp3.mp3 in Resources */,
 				3B0DFC162475CFEF00A51962 /* Assets.xcassets in Resources */,
 				3B0DFC142475CFE800A51962 /* Main.storyboard in Resources */,
 			);
