@@ -17,6 +17,12 @@
 		3B3860572479B5FA008C777F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3860562479B5FA008C777F /* StartScene.swift */; };
 		552727637C1B5FC096606772 /* Pods_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1291CE22DCFE307F4AC08BBE /* Pods_School.framework */; };
 		E056C9ED247BBB3100A10EA6 /* schooltrim.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */; };
+		E056C9EF247BC46500A10EA6 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9EE247BC46500A10EA6 /* School.swift */; };
+		E056C9F1247BF36C00A10EA6 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F0247BF36C00A10EA6 /* Background.swift */; };
+		E056C9F3247BF66600A10EA6 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F2247BF66600A10EA6 /* Child.swift */; };
+		E056C9F5247BFAF300A10EA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F4247BFAF300A10EA6 /* Tree.swift */; };
+		E056C9F7247BFFF300A10EA6 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F6247BFFF300A10EA6 /* Sun.swift */; };
+		E056C9F9247C017800A10EA6 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F8247C017800A10EA6 /* Cloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		3B3860562479B5FA008C777F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		848732CE6D3C60780982C946 /* Pods-School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School.release.xcconfig"; path = "Target Support Files/Pods-School/Pods-School.release.xcconfig"; sourceTree = "<group>"; };
 		E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = schooltrim.mp3; sourceTree = "<group>"; };
+		E056C9EE247BC46500A10EA6 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		E056C9F0247BF36C00A10EA6 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		E056C9F2247BF66600A10EA6 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		E056C9F4247BFAF300A10EA6 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		E056C9F6247BFFF300A10EA6 /* Sun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
+		E056C9F8247C017800A10EA6 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 				3B3860502479A2F6008C777F /* StartViewController.swift */,
 				3B0DFC122475CFE800A51962 /* Main.storyboard */,
 				3B3860562479B5FA008C777F /* StartScene.swift */,
+				E056C9FA247C0F3B00A10EA6 /* SpriteGroup */,
 				E056C9EC247BBB3100A10EA6 /* schooltrim.mp3 */,
 				3B0DFC152475CFEF00A51962 /* Assets.xcassets */,
 				3B0DFC172475CFEF00A51962 /* LaunchScreen.storyboard */,
@@ -98,6 +111,19 @@
 				848732CE6D3C60780982C946 /* Pods-School.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E056C9FA247C0F3B00A10EA6 /* SpriteGroup */ = {
+			isa = PBXGroup;
+			children = (
+				E056C9F8247C017800A10EA6 /* Cloud.swift */,
+				E056C9F4247BFAF300A10EA6 /* Tree.swift */,
+				E056C9F6247BFFF300A10EA6 /* Sun.swift */,
+				E056C9F2247BF66600A10EA6 /* Child.swift */,
+				E056C9F0247BF36C00A10EA6 /* Background.swift */,
+				E056C9EE247BC46500A10EA6 /* School.swift */,
+			);
+			path = SpriteGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +246,13 @@
 				3B0DFC0D2475CFE800A51962 /* AppDelegate.swift in Sources */,
 				3B0DFC0F2475CFE800A51962 /* SceneDelegate.swift in Sources */,
 				3B3860512479A2F6008C777F /* StartViewController.swift in Sources */,
+				E056C9EF247BC46500A10EA6 /* School.swift in Sources */,
 				3B3860572479B5FA008C777F /* StartScene.swift in Sources */,
+				E056C9F9247C017800A10EA6 /* Cloud.swift in Sources */,
+				E056C9F5247BFAF300A10EA6 /* Tree.swift in Sources */,
+				E056C9F3247BF66600A10EA6 /* Child.swift in Sources */,
+				E056C9F1247BF36C00A10EA6 /* Background.swift in Sources */,
+				E056C9F7247BFFF300A10EA6 /* Sun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
