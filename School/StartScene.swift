@@ -53,24 +53,19 @@ class StartScene: SKScene {
         self.addChild(sun)
         
         
+        let goBtnPoint = CGPoint(x: self.size.width / 2 , y: 0)
+        let goBtnPointTo  = CGPoint(x: self.size.width / 2 , y: 60)
+        let goBtn = GoButton.showGoBtn(at: goBtnPoint, pointTo: goBtnPointTo)
+        //self.addChild(goBtn)
+        
+        
+        
         //sound
         let sound = SKAudioNode(fileNamed: "schooltrim")
-        //self.addChild(sound)
-
-
+        self.addChild(sound)
+        sound.run(SKAction.changeVolume(to: 0, duration: 10)) {
+            self.addChild(goBtn)
+            sound.run(SKAction.stop())
+        }
     }
-    
-    func goBtn() {
-        //goBtn
-        let goBtn = SKSpriteNode(imageNamed: "btn")
-        goBtn.setScale(0.1)
-        goBtn.zPosition = 2
-        goBtn.position = CGPoint(x: self.size.width / 2 , y: 60)
-        let zoomLabelBtn = SKAction.scale(by: 10, duration: 10 )
-        let groupActionBtn = SKAction.group([zoomLabelBtn])
-        self.addChild(goBtn)
-        goBtn.run(groupActionBtn)
-    }
-    
-    
 }

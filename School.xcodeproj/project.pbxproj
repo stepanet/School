@@ -23,6 +23,7 @@
 		E056C9F5247BFAF300A10EA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F4247BFAF300A10EA6 /* Tree.swift */; };
 		E056C9F7247BFFF300A10EA6 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F6247BFFF300A10EA6 /* Sun.swift */; };
 		E056C9F9247C017800A10EA6 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9F8247C017800A10EA6 /* Cloud.swift */; };
+		E056C9FC247C760500A10EA6 /* GoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056C9FB247C760500A10EA6 /* GoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E056C9F4247BFAF300A10EA6 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		E056C9F6247BFFF300A10EA6 /* Sun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
 		E056C9F8247C017800A10EA6 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		E056C9FB247C760500A10EA6 /* GoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E056C9F8247C017800A10EA6 /* Cloud.swift */,
+				E056C9FB247C760500A10EA6 /* GoButton.swift */,
 				E056C9F4247BFAF300A10EA6 /* Tree.swift */,
 				E056C9F6247BFFF300A10EA6 /* Sun.swift */,
 				E056C9F2247BF66600A10EA6 /* Child.swift */,
@@ -249,6 +252,7 @@
 				E056C9EF247BC46500A10EA6 /* School.swift in Sources */,
 				3B3860572479B5FA008C777F /* StartScene.swift in Sources */,
 				E056C9F9247C017800A10EA6 /* Cloud.swift in Sources */,
+				E056C9FC247C760500A10EA6 /* GoButton.swift in Sources */,
 				E056C9F5247BFAF300A10EA6 /* Tree.swift in Sources */,
 				E056C9F3247BF66600A10EA6 /* Child.swift in Sources */,
 				E056C9F1247BF36C00A10EA6 /* Background.swift in Sources */,
