@@ -53,7 +53,14 @@ class StartScene: SKScene {
         self.addChild(sun)
         
         
+        //sound
+        let sound = SKAudioNode(fileNamed: "schooltrim")
+        //self.addChild(sound)
 
+
+    }
+    
+    func goBtn() {
         //goBtn
         let goBtn = SKSpriteNode(imageNamed: "btn")
         goBtn.setScale(0.1)
@@ -62,12 +69,8 @@ class StartScene: SKScene {
         let zoomLabelBtn = SKAction.scale(by: 10, duration: 10 )
         let groupActionBtn = SKAction.group([zoomLabelBtn])
         self.addChild(goBtn)
-        
-        //sound
-        let sound = SKAudioNode(fileNamed: "schooltrim")
-        //self.addChild(sound)
-
-        
-        goBtn.run(groupActionBtn)        
+        goBtn.run(groupActionBtn)
     }
+    
+    
 }

@@ -12,14 +12,19 @@ class Child: SKSpriteNode {
     
     static func showChild(at point: CGPoint, pointTo: CGPoint) -> Child {
         
+        
         let child = Child(imageNamed: "student")
         child.setScale(0.5)
         child.zPosition = 2
         child.position = point
         child.run(actionSprite(to: pointTo))
-
+  
         return child
     }
+    
+//    static func showChild1(at point: CGPoint, pointTo: CGPoint, completion: () -> ()) -> Child {
+//    //completion()
+//    }
     
     fileprivate static func actionSprite (to point: CGPoint) -> SKAction {
         
