@@ -9,6 +9,14 @@
 import SpriteKit
 import GameplayKit
 
+struct TreeArray {
+    var position: CGPoint
+    var positionTo: CGPoint
+    var zposition: CGFloat
+    var scale: CGFloat
+    var scaleTo: CGFloat
+}
+
 class StartScene: SKScene {
 
     override func didMove(to view: SKView) {
@@ -35,16 +43,27 @@ class StartScene: SKScene {
         self.addChild(child)
         
         
-        let treeOneposition = CGPoint(x: 0 , y: self.size.height / 4)
-        let treeOnePositionTo = CGPoint(x: self.size.width / 2.5, y: self.size.height / 3)
-        let treeOne = Tree.showTree(at: treeOneposition, pointTo: treeOnePositionTo, imageName: "tree", zPosition: -1, scale: 0.05, scaleTo: 1.5)
-        self.addChild(treeOne)
+        var treeArray: [TreeArray] = []
+        treeArray.append(TreeArray(position: CGPoint(x: 0 , y: self.size.height / 4), positionTo: CGPoint(x: self.size.width / 2.5, y: self.size.height / 3), zposition: -1, scale: 0.05, scaleTo: 1.5))
+        treeArray.append(TreeArray(position: CGPoint(x: self.size.width , y: self.size.height / 5), positionTo: CGPoint(x: self.size.width / 1.1, y: self.size.height / 4.5), zposition: 3, scale: 0.05, scaleTo: 2))
+        
+
+        for tree in treeArray {
+            let tree = Tree.showTree(at: tree.position, pointTo: tree.positionTo, imageName: "tree", zPosition: tree.zposition, scale: tree.scale, scaleTo: tree.scaleTo)
+            self.addChild(tree)
+        }
         
         
-        let treeTwoPosition = CGPoint(x: self.size.width , y: self.size.height / 5)
-        let treeTwoPositionTo = CGPoint(x: self.size.width / 1.1, y: self.size.height / 4.5)
-        let treeTwo = Tree.showTree(at: treeTwoPosition, pointTo: treeTwoPositionTo, imageName: "tree", zPosition: 3, scale: 0.05, scaleTo: 2)
-        self.addChild(treeTwo)
+//        let treeOneposition = CGPoint(x: 0 , y: self.size.height / 4)
+//        let treeOnePositionTo = CGPoint(x: self.size.width / 2.5, y: self.size.height / 3)
+//        let treeOne = Tree.showTree(at: treeOneposition, pointTo: treeOnePositionTo, imageName: "tree", zPosition: -1, scale: 0.05, scaleTo: 1.5)
+//        self.addChild(treeOne)
+        
+        
+//        let treeTwoPosition = CGPoint(x: self.size.width , y: self.size.height / 5)
+//        let treeTwoPositionTo = CGPoint(x: self.size.width / 1.1, y: self.size.height / 4.5)
+//        let treeTwo = Tree.showTree(at: treeTwoPosition, pointTo: treeTwoPositionTo, imageName: "tree", zPosition: 3, scale: 0.05, scaleTo: 2)
+//        self.addChild(treeTwo)
         
         
         let sunPosition = CGPoint(x: 0 , y: self.size.height / 3)

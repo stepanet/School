@@ -22,7 +22,7 @@ class StartViewController: UIViewController {
     }
     
     
-    func startMainScene() { //complition: @escaping () -> ()) {
+    func startMainScene() { 
 
         if let view = self.view as! SKView?  {
             
