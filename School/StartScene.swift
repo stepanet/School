@@ -53,19 +53,7 @@ class StartScene: SKScene {
             self.addChild(tree)
         }
         
-        
-//        let treeOneposition = CGPoint(x: 0 , y: self.size.height / 4)
-//        let treeOnePositionTo = CGPoint(x: self.size.width / 2.5, y: self.size.height / 3)
-//        let treeOne = Tree.showTree(at: treeOneposition, pointTo: treeOnePositionTo, imageName: "tree", zPosition: -1, scale: 0.05, scaleTo: 1.5)
-//        self.addChild(treeOne)
-        
-        
-//        let treeTwoPosition = CGPoint(x: self.size.width , y: self.size.height / 5)
-//        let treeTwoPositionTo = CGPoint(x: self.size.width / 1.1, y: self.size.height / 4.5)
-//        let treeTwo = Tree.showTree(at: treeTwoPosition, pointTo: treeTwoPositionTo, imageName: "tree", zPosition: 3, scale: 0.05, scaleTo: 2)
-//        self.addChild(treeTwo)
-        
-        
+                
         let sunPosition = CGPoint(x: 0 , y: self.size.height / 3)
         let sunPositionTo = CGPoint(x: self.size.width / 2 , y: self.size.height / 1.4)
         let sun = Sun.showSun(at: sunPosition, pointTo: sunPositionTo)
